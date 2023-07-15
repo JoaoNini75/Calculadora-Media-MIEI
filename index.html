@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculadora MIEI</title>
+    <!-- Começado no dia 14/9/2021 e terminado a ????????????/9/2021-->
+</head>
+<body>
+
+    <h1>Calculadora MIEI</h1>
+
+    <br/>
+
+    <p>Esta é uma calculadora da média para o curso de Mestrado Integrado em
+         Engenharia Informática da FCT NOVA.</p>
+
+    <p>Abaixo, tens os espaços para indicar a nota que tiveste a cada uma das unidades
+         curriculares.</p>
+
+    <p>No fim, só precisas de clickar no botão "Calcular" e serão apresentadas as tuas
+         médias por semestre, ano, área científica e a tua média até ao momento.</p>
+
+    <h4>Informações adicionais:</h4>
+
+    <ul>
+        <li>Não precisas de preencher todos os campos; aqueles que não forem
+             preenchidos não serão contabilizados.</li>       
+        <li>Até ao momento, só é possível calcular a média da licenciatura dada a
+             complexidade da escolha das UCs no mestrado.</li>
+        <li>As notas são válidas se variarem entre 10 e 20 (óbvio).</li>            
+    </ul>
+
+    <h2>1º Ano</h2>
+
+    <div>
+        <span id="s1">
+
+            <h3>1º Semestre</h3>
+
+            <form> 
+                <label>Álgebra Linear e Geometria Analítica</label><br>
+                <input ects="6" semester="1" area="m" type="number" min="10" max="20" id="ALGA"> 
+            </form>
+            <br>
+            <form> 
+                <label>Análise Matemática I</label><br>
+                <input ects="6" semester="1" area="m" type="number" min="10" max="20" id="AM1"> 
+            </form>
+            <br>
+            <form> 
+                <label>Introdução à Programação</label><br>
+                <input ects="9" semester="1" area="i" type="number" min="10" max="20" id="IP"> 
+            </form>
+            <br>
+            <form> 
+                <label>Sistemas Lógicos</label><br>
+                <input ects="6" semester="1" area="eec" type="number" min="10" max="20" id="SL"> 
+            </form>
+
+        </span>
+
+        <span id="t1">
+
+            <h3>Trimestre</h3>
+           
+            <form> 
+                <label>Competências Transversais para Ciências e Tecnologia</label><br>
+                <input ects="3" semester="1.5" area="cc" type="number" min="10" max="20" id="CTCT"> 
+            </form>
+
+        </span>   	
+
+        <span id="s2">
+
+            <h3>2º Semestre</h3>
+
+            <form> 
+                <label>Análise Matemática II E</label><br>
+                <input ects="6" semester="2" area="m" type="number" min="10" max="20" id="AM2E"> 
+            </form>
+            <br>
+            <form> 
+                <label>Arquitetura de Computadores</label><br>
+                <input ects="9" semester="2" area="i" type="number" min="10" max="20" id="AC"> 
+            </form>
+            <br>
+            <form> 
+                <label>Matemática Discreta</label><br>
+                <input ects="6" semester="2" area="m" type="number" min="10" max="20" id="MD"> 
+            </form>
+            <br>
+            <form> 
+                <label>Programação Orientada pelos Objetos</label><br>
+                <input ects="9" semester="2" area="i" type="number" min="10" max="20" id="POO"> 
+            </form>
+
+        </span>
+    </div>
+
+    <h2>2º Ano</h2>	
+
+    <div id="div2ano">
+        <span id="s3">
+
+            <h3>3º Semestre</h3>
+
+            <form> 
+                <label>Algoritmos e Estruturas de Dados</label><br>
+                <input ects="9" semester="3" area="i" type="number" min="10" max="20" id="AED"> 
+            </form>
+            <br>
+            <form> 
+                <label>Física</label><br>
+                <input ects="6" semester="3" area="f" type="number" min="10" max="20" id="FINF"> 
+            </form>
+            <br>
+            <form> 
+                <label>Fundamentos de Sistemas de Operação</label><br>
+                <input ects="9" semester="3" area="i" type="number" min="10" max="20" id="FSO"> 
+            </form>
+            <br>
+            <form> 
+                <label>Lógica Computacional</label><br>
+                <input ects="6" semester="3" area="i" type="number" min="10" max="20" id="LC"> 
+            </form>
+
+        </span>
+
+        <span id="t2">
+
+            <h3>Trimestre</h3>
+           
+            <form> 
+                <label>Sociedade, Sustentabilidade e Transformação Digital</label><br>
+                <input ects="3" semester="3.5" area="chs" type="number" min="10" max="20" id="CTS"> 
+            </form>
+
+        </span>   		
+
+        <span id="s4">
+
+            <h3>4º Semestre</h3>
+
+            <form> 
+                <label>Bases de Dados</label><br>
+                <input ects="9" semester="4" area="i" type="number" min="10" max="20" id="BD"> 
+            </form>
+            <br>
+            <form> 
+                <label>Linguagens e Ambientes de Programação</label><br>
+                <input ects="6" semester="4" area="i" type="number" min="10" max="20" id="LAP"> 
+            </form>
+            <br>
+            <form> 
+                <label>Probabilidades e Estatística E</label><br>
+                <input ects="6" semester="4" area="m" type="number" min="10" max="20" id="PEE"> 
+            </form>
+            <br>
+            <form> 
+                <label>Teoria da Computação</label><br>
+                <input ects="6" semester="4" area="i" type="number" min="10" max="20" id="TC"> 
+            </form>
+
+        </span>
+    </div>
+
+    <h2>3º Ano</h2>	
+
+    <div id="div3ano">
+        <span id="s5">
+
+            <h3>5º Semestre</h3>	
+
+            <form> 
+                <label>Computação Gráfica e Interfaces</label><br>
+                <input ects="6" semester="5" area="i" type="number" min="10" max="20" id="CGI"> 
+            </form>
+            <br>
+            <form> 
+                <label>Inteligência Artificial</label><br>
+                <input ects="6" semester="5" area="i" type="number" min="10" max="20" id="IA"> 
+            </form>
+            <br>
+            <form> 
+                <label>Engenharia de Software</label><br>
+                <input ects="9" semester="5" area="i" type="number" min="10" max="20" id="MDS"> 
+            </form>
+            <br>
+            <form> 
+                <label>Redes de Computadores</label><br>
+                <input ects="6" semester="5" area="i" type="number" min="10" max="20" id="RC"> 
+            </form>
+
+        </span>
+        
+        <span id="t3">
+
+            <h3>Trimestre</h3>
+           
+            <form> 
+                <label>PIIC/PIPP</label><br>
+                <input ects="3" semester="5.5" area="i" type="number" min="10" max="20" id="PIIC/PIPP"> 
+            </form>
+
+        </span>
+
+        <span id="s6">
+
+            <h3>6º Semestre</h3>
+
+            <form> 
+                <label>Análise e Desenho de Algoritmos</label><br>
+                <input ects="6" semester="6" area="i" type="number" min="10" max="20" id="ADA"> 
+            </form>
+            <br>
+            <form> 
+                <label>Sistemas Distribuídos</label><br>
+                <input ects="6" semester="6" area="i" type="number" min="10" max="20" id="SD"> 
+            </form>
+            <br>
+            <form> 
+                <label>Atividade Prática de Desenvolvimento Curricular</label><br>
+                <input ects="12" semester="6" area="i" type="number" min="10" max="20" id="APDC"> 
+            </form>
+            <br>
+            <form> 
+                <label>UC do Bloco Livre A</label><br>
+                <input ects="6" semester="6" area="idk" type="number" min="10" max="20" id="PIIC/PIPP"> 
+            </form>
+
+        </span>
+    </div>
+
+    <div>
+        <button id="btn">Calcular</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

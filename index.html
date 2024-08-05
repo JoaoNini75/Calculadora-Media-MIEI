@@ -12,24 +12,16 @@
 
     <br/>
 
-    <p>Esta é uma calculadora da média para o curso de Mestrado Integrado em
+    <p>Esta é uma calculadora da média para o Mestrado Integrado em
          Engenharia Informática da FCT NOVA.</p>
 
     <p>Abaixo, tens os espaços para indicar a nota que tiveste a cada uma das unidades
-         curriculares.</p>
+         curriculares. Não precisas de preencher todos os campos: aqueles que não forem
+        preenchidos, não serão contabilizados.</p>
 
     <p>No fim, só precisas de clickar no botão "Calcular" e serão apresentadas as tuas
-         médias por semestre, ano, área científica e a tua média até ao momento.</p>
-
-    <h4>Informações adicionais:</h4>
-
-    <ul>
-        <li>Não precisas de preencher todos os campos; aqueles que não forem
-             preenchidos não serão contabilizados.</li>       
-        <li>Até ao momento, só é possível calcular a média da licenciatura dada a
-             complexidade da escolha das UCs no mestrado.</li>
-        <li>As notas são válidas se variarem entre 10 e 20 (óbvio).</li>            
-    </ul>
+         médias por semestre, ano, área científica e a tua média até ao momento. Podes alterar
+        nota e clickar novamente em "Calcular" para atualizar as médias.</p>
 
     <h2>1º Ano</h2>
 
@@ -226,7 +218,125 @@
             <br>
             <form> 
                 <label>UC do Bloco Livre A</label><br>
-                <input ects="6" semester="6" area="idk" type="number" min="10" max="20" id="PIIC/PIPP"> 
+                <input ects="6" semester="6" area="livre" type="number" min="10" max="20" id="BLA"> 
+            </form>
+
+        </span>
+    </div>
+
+    <h2>4º Ano</h2>	
+
+    <div id="div4ano">
+        <span id="s7">
+
+            <h3>7º Semestre</h3>	
+
+            <form> 
+                <label>UC do Bloco Livre B</label><br>
+                <input ects="6" semester="7" area="livre" type="number" min="10" max="20" id="BLB"> 
+            </form>
+            <br>
+            <form> 
+                <label>Introdução à Investigação Operacional</label><br>
+                <input ects="6" semester="7" area="m" type="number" min="10" max="20" id="iio"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Consolidação 1</label><br>
+                <input ects="6" semester="7" area="i" type="number" min="10" max="20" id="cons1"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Consolidação 2</label><br>
+                <input ects="6" semester="7" area="i" type="number" min="10" max="20" id="cons2"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Consolidação 3</label><br>
+                <input ects="6" semester="7" area="i" type="number" min="10" max="20" id="cons3"> 
+            </form>
+
+        </span>
+        
+        <span id="t4">
+
+            <h3>Trimestre</h3>
+           
+            <form> 
+                <label>Empreendedorismo</label><br>
+                <input ects="3" semester="7.5" area="cc" type="number" min="10" max="20" id="EE"> 
+            </form>
+
+        </span>
+
+        <span id="s8">
+
+            <h3>8º Semestre</h3>
+
+            <form> 
+                <label>Aspetos Socio-Profissionais da Informática</label><br>
+                <input ects="3" semester="8" area="chs" type="number" min="10" max="20" id="ASPI"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Consolidação 4</label><br>
+                <input ects="6" semester="8" area="i" type="number" min="10" max="20" id="cons4"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Consolidação 5</label><br>
+                <input ects="6" semester="8" area="i" type="number" min="10" max="20" id="cons5"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Especialização 1</label><br>
+                <input ects="6" semester="8" area="i" type="number" min="10" max="20" id="esp1"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Especialização 2</label><br>
+                <input ects="6" semester="8" area="i" type="number" min="10" max="20" id="esp2"> 
+            </form>
+
+        </span>
+    </div>
+
+    <h2>5º Ano</h2>	
+
+    <div id="div5ano">
+        <span id="s9">
+
+            <h3>9º Semestre</h3>	
+
+            <form> 
+                <label>Preparação de Dissertação</label><br>
+                <input ects="12" semester="9" area="i" type="number" min="10" max="20" id="prepdis"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Especialização 3</label><br>
+                <input ects="6" semester="9" area="i" type="number" min="10" max="20" id="esp3"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Especialização 4</label><br>
+                <input ects="6" semester="9" area="i" type="number" min="10" max="20" id="esp4"> 
+            </form>
+            <br>
+            <form> 
+                <label>Unidade de Especialização 5</label><br>
+                <input ects="6" semester="9" area="i" type="number" min="10" max="20" id="esp5"> 
+            </form>
+
+        </span>
+
+        <span id="s10">
+
+            <h3>10º Semestre</h3>
+
+            <form> 
+                <label>Dissertação</label><br>
+                <input ects="30" semester="10" area="i" type="number" min="10" max="20" id="dis"> 
             </form>
 
         </span>
@@ -236,6 +346,6 @@
         <button id="btn">Calcular</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scriptV2.js"></script>
 </body>
 </html>

@@ -44,9 +44,7 @@ function averageHandlingSimple(average, elem, text, id) {
     document.body.append(elem);
 }
 
-
-btn.addEventListener("click", () => {
-
+function calculate() {
     totalECTS = totalGrades = 0;
     s1ECTS = s2ECTS = s3ECTS = s4ECTS = s5ECTS = s6ECTS = 0;
     s1Grades = s2Grades = s3Grades = s4Grades = s5Grades = s6Grades = 0;
@@ -58,9 +56,8 @@ btn.addEventListener("click", () => {
     validGrades = true;
 
     for (i = 0; i < inputs.length; i++) {
-
         if (inputs[i].value && (inputs[i].value < 10 || inputs[i].value > 20)) {
-            alert("As notas válidas variam entre 10 e 20. Corrija os campos que não cumprem este critério.");
+            alert("As notas válidas variam entre 10 e 20. Corrige os campos que não cumprem este critério.");
             validGrades = false;
             break;
         }
@@ -277,5 +274,6 @@ btn.addEventListener("click", () => {
             clickCounter++;
         }       
     } 
+}
 
-})
+btn.addEventListener("click", calculate);
